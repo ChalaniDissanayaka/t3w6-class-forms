@@ -57,7 +57,7 @@ export default class SocialMediaPostContainer extends React.Component {
 		} else {
 			return(
 				<>
-					<button onClick={this.toggleEditMode}>
+					<button className="toggleEditModeBtn" onClick={this.toggleEditMode}>
 						Toggle Edit Mode
 					</button>
 					<ReadonlyPost 

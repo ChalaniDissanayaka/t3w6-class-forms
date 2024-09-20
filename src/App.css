@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* EditablePost Styles */
+.editablePostContainer {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggleEditModeBtn {
+  margin-bottom: 20px;
+  background-color: red;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 40px ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* EditablePost Labels and Inputs */
+.editablePostContainer label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.editablePostContainer input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ReadonlyPost Styles */
+.socialMediaReadonlyPost {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialMediaReadonlyPost h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.socialMediaReadonlyPost h6 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.socialMediaReadonlyPost h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.socialMediaReadonlyPost p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #444;
+}
+
+button {
+  font-size: 14px;
+  padding: 10px 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: rgb(187, 59, 59);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .editablePostContainer, .socialMediaReadonlyPost {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Adjust Toggle Button for Mobile */
+  .toggleEditModeBtn {
+    font-size: 14px;
+    padding: 8px 12px;
+    top: -40px;
   }
 }
